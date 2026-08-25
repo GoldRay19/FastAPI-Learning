@@ -1,0 +1,8 @@
+from fastapi import FastAPI,Request
+app=FastAPI()
+@app.middleware("http")
+async def middle(request:Request,call_next):
+    print("Request Recieved")
+    response=await call_next(request)
+    print("Response sent")
+    return response
