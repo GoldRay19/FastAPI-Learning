@@ -7,7 +7,7 @@ def user(name:str):
     return {"name":name}
 
 #real world use
-class User(BaseModel):
+class User(BaseModel): 
     name: str
     age:int
     email:str

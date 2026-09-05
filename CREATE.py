@@ -33,4 +33,4 @@ def create_todo(title:str,db:Session=Depends(get_db)):
     return {
         "message":"Todo Created",
         "data":todo
-    }
+    } 

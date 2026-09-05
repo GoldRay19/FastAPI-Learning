@@ -18,10 +18,3 @@ def get_users():
         
     }
 
-@app.get("/user/{id}")
-def get_user(get_id:id):
-    if(get_id!=1):
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )

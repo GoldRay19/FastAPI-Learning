@@ -11,6 +11,6 @@ def verify_token(token:str=Header(None)):
         "message":"user authorized"
     }
     
-@app.get("/user")
+@app.getv("/user")
 def User(user=Depends(verify_token)):
     return user
