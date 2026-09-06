@@ -85,3 +85,4 @@ def secure(username:str=Depends(verify_token)):
         "message":f"secure data accessed to {username}",
         "user":username
     }
+
