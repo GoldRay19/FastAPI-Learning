@@ -1,13 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import os
-from dotenv import load_dotenv
+from config import settings
 app= FastAPI()
-load_dotenv()
 
-origins=os.getenv("origins")
-secret_key=os.getenv("secret_key")
-db_url=os.getenv("db_url")
+origins=settings.origins
 
 app.add_middleware(
     CORSMiddleware,
