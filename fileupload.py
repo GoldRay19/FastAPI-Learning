@@ -31,7 +31,7 @@ def upload_file(file:UploadFile=File(...)):
             "file":f"HTTP://127.0.0.1:8080/files/{filename}"
         }
 
-#step 5 gET FILE URL
+#step 4 gET FILE URL
 @app.get("/files/{filename}")
 def get_file(filename:str):
     file_path=os.path.join(upload_dir,filename)

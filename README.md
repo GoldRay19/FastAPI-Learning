@@ -30,6 +30,8 @@ This repository contains my FastAPI learning journey, including:
 * FastAPI
 * Uvicorn
 * Pydantic
+* SQLAlchemy
+* python-dotenv
 
 ---
 
@@ -37,9 +39,41 @@ This repository contains my FastAPI learning journey, including:
 
 ```text
 FastApi Learning/
-│── venv/
-│── main.py
+│── .env
+│── .gitignore
+│── async.py
+│── config.py
+│── cors.py
+│── CREATE.py
+│── crud.py
+│── data.db
+│── delete.py
+│── dependencyinjection.py
+│── env_cors.py
+│── first.py
+│── fileupload.py
+│── jwt.md
+│── jwtauth.py
+│── middleware/
+│── multiple_routes.py
+│── nested_model.py
+│── oauth2.py
+│── oauth2.md
+│── path_parameters.py
+│── path_query_body_combo.py
+│── query_parameters.py
+│── read.py
 │── README.md
+│── request_body.py
+│── Responsemodel.py
+│── sql_alchemy.py
+│── sqllite.py
+│── status_code.py
+│── syncasync.py
+│── test.db
+│── update.py
+│── uploads/
+│── venv/
 ```
 
 ---
@@ -82,7 +116,7 @@ source venv/bin/activate
 ### 4. Install dependencies
 
 ```bash
-pip install fastapi uvicorn
+pip install fastapi uvicorn pydantic sqlalchemy python-dotenv
 ```
 
 ---
