@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 app=FastAPI()
 @app.egt("/news")
 def get_news():
-    url="https://indianexpress.com/"
+    url=""
     response=requests.get(url)
     soup=BeautifulSoup(response.text,"html.parser")
     title=[]
